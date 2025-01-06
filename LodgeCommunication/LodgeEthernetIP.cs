@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 using RockwellCommunication.Protocol;
 using RockwellCommunication.IOSignals;
 using SiiF_VISION.Technique.Communications;
+using RockwellCommunication;
 using System.Globalization;
 using System.Reflection;
 
-namespace RockwellCommunication
+namespace Exemple
 {
-
-
 
     public class LodgeEthernetIP : ICom
     {
@@ -81,7 +80,7 @@ namespace RockwellCommunication
         public LodgeEthernetIP()
         {
 
-            eip = new EthernetIP("192.32.98.50", "1.0", libplctag.PlcType.ControlLogix, "Vision_Out", "Vision_In");
+            eip = new EthernetIP("192.32.98.50", "1.0", "Vision_Out", "Vision_In");
             eip.ImportUdtInput("UDT_VISION_OUT.L5X");
             eip.ImportUdtOutput("UDT_VISION_IN.L5X");
 

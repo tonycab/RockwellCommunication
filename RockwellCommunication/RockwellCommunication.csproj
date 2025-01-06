@@ -48,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IOSignals\Signal.cs" />
-    <Compile Include="LodgeEthernetIP.cs" />
     <Compile Include="Protocol\EthernetIPEventArgs.cs" />
     <Compile Include="ICom.cs" />
     <Compile Include="Protocol\StateConnect.cs" />

@@ -10,9 +10,14 @@ using System.Diagnostics;
 
 namespace RockwellCommunication.Protocol
 {
+     
 
     public class EthernetIP : Dictionary<string, Signal>
     {
+
+    
+
+
         #region Properties public
 
         /// <summary>
@@ -48,6 +53,8 @@ namespace RockwellCommunication.Protocol
         public PlcType PlcType { get; set; }
 
 
+        
+
         /// <summary>
         /// Tag de départ des signaux d'entrées
         /// </summary>
@@ -78,7 +85,7 @@ namespace RockwellCommunication.Protocol
         public int ElementCountOutput { get; set; } = 1;
 
 
-
+        
         /// <summary>
         /// Evenement de changement d'état de la connection Modbus
         /// </summary>
@@ -113,12 +120,12 @@ namespace RockwellCommunication.Protocol
         /// <param name="sizeRegisterInput">%MW de départ des signaux de sorties</param>
         /// <param name="startRegisterOutput">Nombre de %MW des siganux d'entrées</param>
         /// <param name="sizeRegisterOutput">Nombre de %MW des signaux de sorties</param>
-        public EthernetIP(string ipAddressPlc, string path, PlcType plcType, string nameTagInput = "", string nameTagOutput = "")
+        public EthernetIP(string ipAddressPlc, string path, string nameTagInput = "", string nameTagOutput = "")
         {
 
             IPadressPlc = ipAddressPlc;
             Path = path;
-            PlcType = plcType;
+            PlcType = PlcType.ControlLogix;
 
             NameTagInput = nameTagInput;
             NameTagOutput = nameTagOutput;

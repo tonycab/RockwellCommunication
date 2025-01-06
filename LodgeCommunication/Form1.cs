@@ -15,7 +15,7 @@ using RockwellCommunication.Protocol;
 
 
 
-namespace LodgeCommunication
+namespace Exemple
 {
     public partial class Form1 : Form
     {

@@ -73,6 +73,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LodgeEthernetIP.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="LogsManager.cs" />
     <Compile Include="Program.cs" />
@@ -103,9 +104,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RockwellCommunication\RockwellCommunication2.csproj">
+    <ProjectReference Include="..\RockwellCommunication\RockwellCommunication.csproj">
       <Project>{5983b9f8-b037-4e36-8b35-b48f4b904216}</Project>
-      <Name>RockwellCommunication2</Name>
+      <Name>RockwellCommunication</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

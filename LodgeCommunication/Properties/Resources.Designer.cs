@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LodgeCommunication.Properties
+namespace Exemple.Properties
 {
 
 
