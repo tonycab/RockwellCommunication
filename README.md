@@ -2,7 +2,7 @@
 
 # RockwellCommunication
 
-RockwellCommunication est une librairie C# qui encapsule la librairie ➡️[libplctag](https://github.com/libplctag/libplctag) et ajout une fonctionnalité de lecture/écrire périodique à partir d'un UDT d'entrée et un UDT de sortie. 
+RockwellCommunication est une librairie C# qui encapsule la librairie ➡️[libplctag](https://github.com/libplctag/libplctag) et ajoute une fonctionnalité de lecture/écrire périodique à partir d'un UDT d'entrées et un UDT de sorties. 
 
 Les UDT peuvent être exportés depuis le logiciel AB/Rockwell au Format L5X. 
 
@@ -36,7 +36,7 @@ Contructeur :
      eip.ImportUdtOutput("UDT_VISION_IN.L5X");
 ```
 
-"Vision_Out" et "Vision_In" sont deux Tag déclarés dans le programme automate. les méthodes "ImportUdtInput" et "ImportUdtOutput" permettent d'importer les UDTs.
+"Vision_Out" et "Vision_In" sont deux Tag de type "UDT_VISION_IN" et "UDT_VISION_OUT" déclarés dans le programme automate. les méthodes "ImportUdtInput" et "ImportUdtOutput" permettent d'importer les UDTs.
 Les variables sont alors disponible dans un dictionnaire. Les noms des variables commence par "IN." ou "OUT." et respecte ensuite le nom de la structure UDT.
 
 Evennement et écriture :
