@@ -4,9 +4,9 @@
 
 RockwellCommunication est une librairie C# qui encapsule la librairie ➡️[libplctag](https://github.com/libplctag/libplctag) et ajout une fonctionnalité de lecture/écrire périodique à partir d'un UDT d'entrée et un UDT de sortie. 
 
-
-
 Les UDT peuvent être exportés depuis le logiciel AB/Rockwell au Format L5X. 
+
+Lors de l'importation de l'UDT, la taille de l'UDT est automatiquement calculé afin d'optimiser l'échange comme une seul variable.
 
 ```mermaid
 sequenceDiagram
@@ -39,7 +39,7 @@ Contructeur :
 "Vision_Out" et "Vision_In" sont deux Tag déclarés dans le programme automate. les méthodes "ImportUdtInput" et "ImportUdtOutput" permettent d'importer les UDTs.
 Les variables sont alors disponible dans un dictionnaire. Les noms des variables commence par "IN." ou "OUT." et respecte ensuite le nom de la structure UDT.
 
-Evènnement :
+Evennement et écriture :
  ```C#
    //Bit de vie communication
    eip["IN.GENERALITY.Life"].SignalChanged += (s) =>
