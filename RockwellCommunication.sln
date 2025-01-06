@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockwellCommunication", "RockwellCommunication\RockwellCommunication.csproj", "{5983B9F8-B037-4E36-8B35-B48F4B904216}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple", "LodgeCommunication\Exemple.csproj", "{371D3B13-D934-418B-AEC0-A73B43C78AE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemple", "Exemple\Exemple.csproj", "{371D3B13-D934-418B-AEC0-A73B43C78AE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{371D3B13-D934-418B-AEC0-A73B43C78AE2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LodgeCommunication</RootNamespace>
-    <AssemblyName>LodgeCommunication</AssemblyName>
+    <RootNamespace>Exemple</RootNamespace>
+    <AssemblyName>Exemple</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
