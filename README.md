@@ -16,9 +16,7 @@ sequenceDiagram
 ```
 <!-- APP -->
 <div align="center">
-  <a href="https://github.com/tonycab/BarCodeToPlc">
     <img src="Images/Capture1.png" alt="Logo" width="800" >
-  </a>
 </div>
 
 > [!NOTE]
