@@ -468,7 +468,7 @@ namespace RockwellCommunication.Protocol
         public void Start()
         {
             cancellationToken = new CancellationTokenSource();
-            StartModbus();
+            StartEthernetIP();
         }
         /// <summary>
         /// Stop connection to PLC
@@ -524,7 +524,7 @@ namespace RockwellCommunication.Protocol
         }
 
         //Cycle de connection et d'échange PC et PLC
-        private void StartModbus()
+        private void StartEthernet()
         {
             Stopwatch stopWatch = new Stopwatch();
 
@@ -699,7 +699,7 @@ namespace RockwellCommunication.Protocol
         private int ResolveUdt(List<Signal> listVar, DataType NodeDataType, UDT_Manager udt_Manager, ref int byteAdress, ref int bitAdress, string namePreview)
         {
 
-            //Regle comprise
+            //Regle comprise de l'organisation mémoire d'un UDT dans l'automate
 
             //Un UDT contenant au moins un type atomique doit faire minimum 4 bytes
             //Un UDT contenant aucun type atomique que des types UDT ne contient pas de bytes
@@ -707,6 +707,7 @@ namespace RockwellCommunication.Protocol
             //Un UDT démarre sur une adresse modulo de 4
             //un INT démarre sur une adresse modulo de 2
             //un FLOAT démarre sur une adresse modulo de 4
+            
 
             string typePrecedent = "";
             int bitAllocation = 0;
