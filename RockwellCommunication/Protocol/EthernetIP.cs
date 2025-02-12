@@ -778,6 +778,7 @@ namespace RockwellCommunication.Protocol
                             {
                                 sizeUSINTForBool++;
                                 bitAdress = 0;
+                                byteAdress += 1;
                                 bitAllocation -= 1;
                             }
 
@@ -856,6 +857,37 @@ namespace RockwellCommunication.Protocol
                             }
 
                             break;
+
+
+
+                        case "UDINT":
+
+                            sizeUdt += 4;
+
+                            byteAdress = byteAdress + (byteAdress % 4);
+
+                            if (type.Hidden == false)
+                            {
+                                listVar.Add(new Signal<UInt32>($"{namePreview}.{type.Name}", "", (uint)byteAdress));
+                                byteAdress += 4;
+                            }
+
+                            break;
+
+                        case "DINT":
+
+                            sizeUdt += 4;
+
+                            byteAdress = byteAdress + (byteAdress % 4);
+
+                            if (type.Hidden == false)
+                            {
+                                listVar.Add(new Signal<Int32>($"{namePreview}.{type.Name}", "", (uint)byteAdress));
+                                byteAdress += 4;
+                            }
+
+                            break;
+
 
                         default:
 
