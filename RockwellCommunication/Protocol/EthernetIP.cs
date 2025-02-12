@@ -524,7 +524,7 @@ namespace RockwellCommunication.Protocol
         }
 
         //Cycle de connection et d'échange PC et PLC
-        private void StartEthernetIP()
+        private void StartEthernet()
         {
             Stopwatch stopWatch = new Stopwatch();
 
